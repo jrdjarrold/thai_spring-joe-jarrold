@@ -1,0 +1,1431 @@
+/*----------------------------------------------------------+
+|															|
+|	CSS Developed by Joseph Jarrold							|
+|	Copyright (C) 2015 Joseph Jarrold						|
+|	joseph.jarrold@students.plymouth.ac.uk					|
+|															|
++-----------------------------------------------------------+
+|															|
+|	This CSS file and all of the content has been			|
+|	developed by Joseph Jarrold. This cannot be copied		|
+|   unless permission has been granted.						|
+|															|
++-----------------------------------------------------------+
+|	 _____ _  _   _   ___    ___ ___ ___ ___ _  _  ___ 		|
+|	|_   _| || | /_\ |_ _|  / __| _ \ _ \_ _| \| |/ __|		|
+|	  | | | __ |/ _ \ | |   \__ \  _/   /| || .` | (_ |		|
+|	  |_| |_||_/_/ \_\___|  |___/_| |_|_\___|_|\_|\___|		|
+|															|
++----------------------------------------------------------*/
+
+/*----------------------+
+|	_  _ _ ____ ____	|
+|	|\/| | [__  |   	|
+|	|  | | ___] |___	|
+|						|
++▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
+
+body {
+	margin: 0px;
+	height: 100%;
+}
+
+html {
+	height: 100%;
+}
+
+/*----------------------------------------------------------+
+|	___  _  _ ___  _    _ ____    ___  ____ ____ ____ ____	|
+|	|__] |  | |__] |    | |       |__] |__| | __ |___ [__ 	|
+|	|    |__| |__] |___ | |___    |    |  | |__] |___ ___]	|
+|                                                      		|
++▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
+
+/*---------- Top Navergation Bar ----------*/
+
+#top_navigation_bar {
+	background: black;
+    width: 100%;
+    height: 44px;
+}
+
+#top_navigation_bar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	display: block;
+	text-align: center;
+}
+
+#top_navigation_bar ul li {
+	display: inline-block;
+}
+
+#top_navigation_bar ul li a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding: 15px 25px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-size: 14px;
+	position: relative;
+}
+
+#top_navigation_bar ul li a:hover {
+	color: rgb(212, 0, 17);
+}
+
+#top_navigation_bar ul li a:hover:before {
+	width: 100%;
+}
+
+#top_navigation_bar ul li a:after {
+	content: "";
+	position: absolute;
+	right: -3px;
+	top: 19px;
+	height: 4px;
+	width: 4px;
+	background: rgb(0, 86, 132);
+}
+
+#top_navigation_bar ul li a:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 0;
+	background: rgb(212, 0, 17);
+	-webkit-transition: width .25s;
+	-moz-transition: width .25s;
+	-ms-transition: width .25s;
+	-o-transition: width .25s;
+	transition: width .25s;
+}
+
+#top_navigation_bar ul li.last > a:after,
+#top_navigation_bar ul li:last-child > a:after {
+	display: none;
+}
+
+/*---------- Bottom Navergation Bar ----------*/
+
+#bottom_navigation_bar {
+	background: black;
+	height: 44px;
+	clear: both;
+}
+
+#bottom_navigation_bar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	display: block;
+	text-align: center;
+}
+
+#bottom_navigation_bar ul li {
+	display: inline-block;
+}
+
+#bottom_navigation_bar ul li a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding: 15px 25px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-size: 14px;
+	position: relative;
+}
+
+#bottom_navigation_bar ul li a:hover {
+	color: rgb(212, 0, 17);
+}
+
+#bottom_navigation_bar ul li a:hover:before {
+	width: 100%;
+}
+
+#bottom_navigation_bar ul li a:after {
+	content: "";
+	position: absolute;
+	right: -3px;
+	top: 19px;
+	height: 4px;
+	width: 4px;
+	background: rgb(0, 86, 132);
+}
+
+#bottom_navigation_bar ul li a:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 0;
+	background: rgb(212, 0, 17);
+	-webkit-transition: width .25s;
+	-moz-transition: width .25s;
+	-ms-transition: width .25s;
+	-o-transition: width .25s;
+	transition: width .25s;
+}
+
+#bottom_navigation_bar ul li.last > a:after,
+#bottom_navigation_bar ul li:last-child > a:after {
+	display: none;
+}
+
+/*---------- index.html ----------*/
+
+h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+#filter_1 {
+	background-image: url(images/template-4.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+}
+
+#filter_2 {
+	background-color: rgba(251, 255, 140, 0.6);
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+#filter_2b {
+	background-color: rgba(251, 255, 140, 0.8);
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+#filter_3 {
+	background-color: rgba(98, 205, 222, 0.6);
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+#index_top {
+	background-color: blue;
+	background-image: url(images/thailand_1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	height: calc(100% - 44px);
+	height: -o-calc(100% - 44px); /* opera */
+	height: -webkit-calc(100% - 44px); /* google, safari */
+	height: -moz-calc(100% - 44px); /* firefox */
+	font-size: 15px;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 10px;
+}
+
+#index_top img {
+	padding-top: 4%;
+	padding-bottom: 4%;
+	width: 150px;
+}
+
+#index_bottom_left {
+	background-color: green;
+	width: 50%;
+	height: calc(100% - 44px);
+	height: -o-calc(100% - 44px); /* opera */
+	height: -webkit-calc(100% - 44px); /* google, safari */
+	height: -moz-calc(100% - 44px); /* firefox */
+	float: left;
+	text-align: center;
+	color: white;
+	font-size: 160px;
+	text-align: center;
+	background-image: url(images/thailand_2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center; 
+	font-family: 'Open Sans', sans-serif;
+}
+
+#index_bottom_left_content {
+	color: white;
+	font-size: 160px;
+	padding-top: 33%;
+	text-align: center;
+	overflow: hidden;
+	text-transform: uppercase;
+}
+
+#index_bottom_right {
+	background-color: green;
+	width: 50%;
+	height: calc(100% - 44px);
+	height: -o-calc(100% - 44px); /* opera */
+	height: -webkit-calc(100% - 44px); /* google, safari */
+	height: -moz-calc(100% - 44px); /* firefox */
+	float: right;
+	text-align: center;
+	color: white;
+	text-align: center;
+	background-image: url(images/thailand_3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center; 
+	font-family: 'Open Sans', sans-serif;
+}
+
+#index_bottom_right_content {
+	color: white;
+	line-height: 50px;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+	overflow: hidden;
+}
+
+#index_bottom_right_content h2 {
+	font-size: 100px;
+}
+
+#index_bottom_left a:link {color:white; text-decoration:none;}      /* unvisited link  */
+#index_bottom_left a:visited {color:white; text-decoration:none;}   /* visited link */
+#index_bottom_left a:hover {color:white; text-decoration:none; text-decoration:none;}     /* mouse over link */
+#index_bottom_left a:active {color:white; text-decoration:none;}    /* selected link */
+
+#homepage_shop_link {
+	font-size: 20px;
+}
+
+/*---------- contact.html ----------*/
+
+#contact_main {
+	height: calc(100% - 88px);
+	height: -o-calc(100% - 88px); /* opera */
+	height: -webkit-calc(100% - 88px); /* google, safari */
+	height: -moz-calc(100% - 88px); /* firefox */
+	background-image: url(images/thailand_3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: -10px;
+	clear: both;
+}
+
+#filter_1 {
+	background-image: url(images/template-4.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	clear: both;
+}
+
+#contact_top {
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.5);
+	margin: 10px;
+	padding: 10px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+}
+
+#contact_con {
+	background-color: rgba(255, 255, 255, 0.5);
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 40%;
+}
+
+#contact_form input {
+	font-size: 15px;
+	margin: -5px;
+	height: 40px;
+	width: 300px;
+	text-align: center;
+	border: 0px;
+}
+
+#contact_form textarea {
+	font-size: 15px;
+	margin: -5px;
+	height: 150px;
+	width: 300px;
+	text-align: center;
+	border: 0px;
+}
+
+#contact_form {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.contact_form_submit {
+	margin-top: 40px;
+	width: 200px;
+	background-color: rgb(47, 198, 143);
+}
+
+/*---------- message_sent.html ----------*/
+
+#contact_sent_top {
+	background-color: blue;
+	background-image: url(images/thailand_1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: calc(100% - 88px);
+	height: -o-calc(100% - 88px); /* opera */
+	height: -webkit-calc(100% - 88px); /* google, safari */
+	height: -moz-calc(100% - 88px); /* firefox */
+}
+
+#contact_sent_top_main {
+	text-align: center;
+	font-size: 20px;	
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 2px;
+	padding-top: 17%;
+}
+
+#contact_sent_top_main a {
+	text-decoration: none;
+	font-style: italic;
+	color: red;
+}
+
+/*---------- Shop.html ----------*/
+
+#shop_top {
+	height: calc(100% - 44px);
+	height: -o-calc(100% - 44px); /* opera */
+	height: -webkit-calc(100% - 44px); /* google, safari */
+	height: -moz-calc(100% - 44px); /* firefox */
+	background-image: url(images/thailand_3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#filter_6 {
+	background-image: url(images/template-3.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+}
+
+#bottle-shop {
+	max-width:90%;
+	max-height:90%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#shop_bottom_underlay {
+	background-image: url(images/thailand_6.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: calc(100% - 22px);
+	height: -o-calc(100% - 22px); /* opera */
+	height: -webkit-calc(100% - 22px); /* google, safari */
+	height: -moz-calc(100% - 22px); /* firefox */
+}
+
+#shop_bottom_left {
+	height: 100%;
+	width: 50%;
+	background-image: url(images/template-5.png);
+	float: left;
+	text-align: center;
+	font-size: 70px;
+	line-height: 120px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#shop_bottom_right {
+	height: 100%;
+	width: 50%;
+	background-image: url(images/template-6.png);
+	float: right;
+	text-align: center;
+	font-size: 20px;
+	line-height: 40px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#shop_bottom_left a:link {color:black; text-decoration:none;}      /* unvisited link  */
+#shop_bottom_left a:visited {color:black; text-decoration:none;}   /* visited link */
+#shop_bottom_left a:hover {color:black; text-decoration:none; text-decoration:none;}     /* mouse over link */
+#shop_bottom_left a:active {color:black; text-decoration:none;}    /* selected link */
+
+/*---------- site_map.html ----------*/
+
+#site_map_underlay {
+	width: 100%;
+	height: calc(100% - 88px);
+	height: -o-calc(100% - 88px); /* opera */
+	height: -webkit-calc(100% - 88px); /* google, safari */
+	height: -moz-calc(100% - 88px); /* firefox */
+	background-image: url(images/thailand_7b.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+}
+
+#site_map_left {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+#site_map_right {
+	width: 50%;
+	height: 100%;
+	float: right;
+}
+
+#site_map_graphic {
+	max-width:90%;
+	max-height:90%;
+	display: block;
+	padding-top: 50px;
+}
+
+#site_map_p_1 {
+	font-size: 50px;
+	letter-spacing: 10px;
+}
+
+#site_map_p_2 {
+	font-size: 20px;
+	word-spacing: 5px;
+	letter-spacing: 2px;	
+}
+
+#site_map_list {
+	color: white;
+	list-style-type: square;
+	font-size: 40px;
+}
+
+#site_map_list a:link {color:white; text-decoration:none;} /* unvisited link  */
+#site_map_list a:visited {color:white; text-decoration:none;} /* visited link */
+#site_map_list a:hover {color:rgb(232, 230, 234); text-decoration:none; text-decoration:none;} /* mouse over link */
+#site_map_list a:active {color:white; text-decoration:none;} /* selected link */
+
+/*---------- memmber_login.html ----------*/
+
+#container_customer_login {
+	background-image: url(images/thailand_4.jpg);
+	height: calc(100% - 88px);
+	height: -o-calc(100% - 88px); /* opera */
+	height: -webkit-calc(100% - 88px); /* google, safari */
+	height: -moz-calc(100% - 88px); /* firefox */
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: -20px;
+}
+
+#filter_4 {
+	background-image: url(images/template-2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+}
+
+#existing_customers_login_box {
+	text-align: center;
+	background-color: rgba(2, 1, 2, 0.7);
+	width: 300px;
+}
+
+#new_customers_login_box {
+	text-align: center;
+	background-color: rgba(2, 1, 2, 0.7);
+	width: 300px;
+}
+
+#existing_customers_header {
+	background-color: rgb(1, 162, 49);
+	color: white;
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	padding: 5px;
+	letter-spacing: 3px;
+	word-spacing: 8px;
+}
+
+#new_customers_header {
+	background-color: rgb(0, 134, 223);
+	color: white;
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	padding: 5px;
+	letter-spacing: 3px;
+}
+
+#existing_customers_login_box input {
+	font-size: 15px;
+	margin: 5px;
+	height: 40px;
+	width: 290px;
+	text-align: center;
+	border: 0px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+}
+
+#existing_customers_login_box input[type=submit] {
+	width: 100px;
+	background-color: rgb(1, 162, 49);
+	color: white;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	letter-spacing: 3px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+}
+
+#new_customers_login_box input {
+	font-size: 15px;
+	margin: 5px;
+	height: 40px;
+	width: 290px;
+	text-align: center;
+	border: 0px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+}
+
+#new_customers_login_box input[type=submit] {
+	width: 200px;
+	background-color: rgb(0, 134, 223);
+	color: white;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	letter-spacing: 3px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+}
+
+#echo_error_member_login {
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#both_boxs {
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+}
+
+/*---------- create_an_account.php ----------*/
+
+#container_create_an_account {
+	background-image: url(images/thailand_6.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#filter_5 {
+	background-image: url(images/template-2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+}
+
+#create_an_account_form {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background: rgba(232, 230, 234, 0.7);
+	width: 500px;
+	padding: 10px;
+
+}
+
+#create_an_account_form input {
+	font-size: 15px;
+	margin: -5px;
+	height: 40px;
+	width: 300px;
+	text-align: center;
+	border: 0px;
+}
+
+#create_an_account_form select {
+	font-size: 15px;
+	margin: -5px;
+	height: 40px;
+	width: 300px;
+	text-align: center;
+	border: 0px;
+}
+
+.create_an_account_submit {
+	margin-top: 40px;
+	width: 300px;
+	background-color: rgb(47, 198, 143);
+}
+
+#create_an_account_form p{
+	margin-top: 0px;
+}
+
+#caahead {
+	font-size: 200px;
+}
+
+/*---------- member_new_account_made.html ----------*/
+
+#dashboard_container_account_made {
+	padding: 20px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+}
+
+/*--------------------------------------------------+
+|	___  ____ ____ _  _ ___  ____ ____ ____ ___ 	|
+|	|  \ |__| [__  |__| |__] |  | |__| |__/ |  \	|
+|	|__/ |  | ___] |  | |__] |__| |  | |  \ |__/ 	|
+|													|
++▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
+
+/*---------- Dashboard Navergation Bar ----------*/
+
+#dashboard_navigation_bar {
+	background: rgb(182, 181, 184);
+}
+
+#dashboard_navigation_bar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	display: block;
+	text-align: center;
+}
+
+#dashboard_navigation_bar ul li {
+	display: inline-block;
+}
+
+#dashboard_navigation_bar ul li a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding: 15px 25px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-size: 14px;
+	position: relative;
+}
+
+#dashboard_navigation_bar ul li a:hover {
+	color: rgb(212, 0, 17);
+}
+
+#dashboard_navigation_bar ul li a:hover:before {
+	width: 100%;
+}
+
+#dashboard_navigation_bar ul li a:after {
+	content: "";
+	position: absolute;
+	right: -3px;
+	top: 19px;
+	height: 4px;
+	width: 4px;
+	background: rgb(0, 86, 132);
+}
+
+#dashboard_navigation_bar ul li a:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 0;
+	background: rgb(212, 0, 17);
+	-webkit-transition: width .25s;
+	-moz-transition: width .25s;
+	-ms-transition: width .25s;
+	-o-transition: width .25s;
+	transition: width .25s;
+}
+
+#dashboard_navigation_bar ul li.last > a:after,
+#dashboard_navigation_bar ul li:last-child > a:after {
+	display: none;
+}
+
+/*---------- Dashboard Navergation Bar Bottom ----------*/
+
+#dashbaord_navigation_bar_bottom {
+	background: rgb(182, 181, 184);
+	height: 44px;
+}
+
+#dashbaord_navigation_bar_bottom ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	display: block;
+	text-align: center;
+}
+
+#dashbaord_navigation_bar_bottom ul li {
+	display: inline-block;
+}
+
+#dashbaord_navigation_bar_bottom ul li a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding: 15px 25px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-size: 14px;
+	position: relative;
+}
+
+#dashbaord_navigation_bar_bottom ul li a:hover {
+	color: rgb(212, 0, 17);
+}
+
+#dashbaord_navigation_bar_bottom ul li a:hover:before {
+	width: 100%;
+}
+
+#dashbaord_navigation_bar_bottom ul li a:after {
+	content: "";
+	position: absolute;
+	right: -3px;
+	top: 19px;
+	height: 4px;
+	width: 4px;
+	background: rgb(0, 86, 132);
+}
+
+#dashbaord_navigation_bar_bottom ul li a:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 0;
+	background: rgb(212, 0, 17);
+	-webkit-transition: width .25s;
+	-moz-transition: width .25s;
+	-ms-transition: width .25s;
+	-o-transition: width .25s;
+	transition: width .25s;
+}
+
+#dashbaord_navigation_bar_bottom ul li.last > a:after,
+#dashbaord_navigation_bar_bottom ul li:last-child > a:after {
+	display: none;
+}
+
+/*---------- Dashboard Navergation Bar Customers ----------*/
+
+#dashboard_navigation_bar_customers {
+	background: rgb(218, 143, 66);
+}
+
+#dashboard_navigation_bar_customers ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	display: block;
+	text-align: center;
+}
+
+#dashboard_navigation_bar_customers ul li {
+	display: inline-block;
+}
+
+#dashboard_navigation_bar_customers ul li a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding: 15px 25px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-size: 14px;
+	position: relative;
+}
+
+#dashboard_navigation_bar_customers ul li a:hover {
+	color: rgb(212, 0, 17);
+}
+
+#dashboard_navigation_bar_customers ul li a:hover:before {
+	width: 100%;
+}
+
+#dashboard_navigation_bar_customers ul li a:after {
+	content: "";
+	position: absolute;
+	right: -3px;
+	top: 19px;
+	height: 4px;
+	width: 4px;
+	background: rgb(0, 86, 132);
+}
+
+#dashboard_navigation_bar_customers ul li a:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 0;
+	background: rgb(212, 0, 17);
+	-webkit-transition: width .25s;
+	-moz-transition: width .25s;
+	-ms-transition: width .25s;
+	-o-transition: width .25s;
+	transition: width .25s;
+}
+
+#dashboard_navigation_bar_customers ul li.last > a:after,
+#dashboard_navigation_bar_customers ul li:last-child > a:after {
+	display: none;
+}
+
+/*---------- Dashboard Navergation Bar Bottom Customers ----------*/
+
+#dashbaord_navigation_bar_bottom_customers {
+	background: rgb(218, 143, 66);
+	height: 44px;
+}
+
+#dashbaord_navigation_bar_bottom_customers ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	display: block;
+	text-align: center;
+}
+
+#dashbaord_navigation_bar_bottom_customers ul li {
+	display: inline-block;
+}
+
+#dashbaord_navigation_bar_bottom_customers ul li a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding: 15px 25px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-size: 14px;
+	position: relative;
+}
+
+#dashbaord_navigation_bar_bottom_customers ul li a:hover {
+	color: rgb(212, 0, 17);
+}
+
+#dashbaord_navigation_bar_bottom_customers ul li a:hover:before {
+	width: 100%;
+}
+
+#dashbaord_navigation_bar_bottom_customers ul li a:after {
+	content: "";
+	position: absolute;
+	right: -3px;
+	top: 19px;
+	height: 4px;
+	width: 4px;
+	background: rgb(0, 86, 132);
+}
+
+#dashbaord_navigation_bar_bottom_customers ul li a:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 0;
+	background: rgb(212, 0, 17);
+	-webkit-transition: width .25s;
+	-moz-transition: width .25s;
+	-ms-transition: width .25s;
+	-o-transition: width .25s;
+	transition: width .25s;
+}
+
+#dashbaord_navigation_bar_bottom_customers ul li.last > a:after,
+#dashbaord_navigation_bar_bottom_customers ul li:last-child > a:after {
+	display: none;
+}
+
+/*---------- Dashboard ----------*/
+
+#dashboard_container {
+	background-color: rgb(246, 244, 248);
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*----------------------------------------------------------------------+
+|	____ _  _ ____ ___ ____ _  _ ____ ____    ___  ____ ____ ____ ____	|
+|	|    |  | [__   |  |  | |\/| |___ |__/    |__] |__| | __ |___ [__ 	|
+|	|___ |__| ___]  |  |__| |  | |___ |  \    |    |  | |__] |___ ___]	|                                                                
+|                                                      					|
++▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
+
+/*---------- memmber_home.php ----------*/
+
+#container_dashboard {
+	padding: 40px;
+}
+
+#welcome_line {
+	font-size: 30px;
+	text-align: center;
+}
+
+#dashboard_home {
+	color: rgb(80, 155, 152);
+	padding: 10px;
+}
+
+#dashboard_home a {
+	color: black;
+	text-decoration: none;
+	font-style: italic;
+}
+
+#member_colour {
+	color: rgb(80, 155, 152);
+}
+
+#member_colour a{
+	color: black;
+	text-decoration: none;
+	font-style: italic;
+}
+
+#member_home_op_1 {
+	text-align: center;
+}
+
+#member_home_op_1 ul li {
+	display: inline;
+	background: rgb(73, 155, 152);
+	font-size: 30px;
+	padding: 10px;
+	line-height: 50px;
+}
+
+#member_home_op_1 a:link {color:white; text-decoration:none;} /* unvisited link  */
+#member_home_op_1 a:visited {color:white; text-decoration:none;} /* visited link */
+#member_home_op_1 a:hover {color:rgb(232, 230, 234); text-decoration:none; text-decoration:none;} /* mouse over link */
+#member_home_op_1 a:active {color:white; text-decoration:none;} /* selected link */
+
+/*---------- member_place_order.php ----------*/
+
+#place_an_oder_top {
+	text-align: center;
+}
+
+#newaddy input {
+	font-size: 15px;
+	margin: -5px;
+	height: 40px;
+	width: 300px;
+	text-align: center;
+	border: 0px;
+}
+
+#newaddy select {
+	font-size: 15px;
+	margin: -5px;
+	height: 40px;
+	width: 300px;
+	text-align: center;
+	border: 0px;
+}
+
+#submitlogin {
+	background-color: rgb(73, 155, 152);
+	color: white;
+	width: 300px;
+	height: 40px;
+	font-size: 15px;
+	border: 0px;
+}
+
+/*---------- order_placed.php ----------*/
+
+#order_placed_message {
+	padding: 20px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: rgb(80, 155, 152);
+}
+
+#order_placed_message a {
+	color: black;
+	text-decoration: none;
+	font-style: italic;
+}
+
+/*---------- member_my_details.php ----------*/
+
+#newaddy {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	background-color: rgb(226, 227, 231);
+}
+
+/*---------- member_my_order.php ----------*/
+
+#newaddy {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	background-color: rgb(226, 227, 231);
+}
+
+#table001 {
+	padding-left: 80px;
+	padding-right: 80px;
+	padding-bottom: 40px;
+	padding-top: 20px;
+}
+
+#table004 {
+	padding-left: 295px;
+	padding-right: 295px;
+	padding-bottom: 40px;
+	padding-top: 20px;
+}
+
+#myorderstable {
+	border-collapse: collapse;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#myorderstable th {
+	text-align: center;
+	border: 2px solid;
+	border-color: rgb(73, 155, 152);
+	background-color: rgb(44, 107, 105);
+	padding: 10px;
+	color: white;
+	font-weight:normal
+}
+
+#myorderstable td {
+	text-align: center;
+	border: 2px solid;
+	border-color: rgb(73, 155, 152);
+	background-color: rgb(246, 244, 248);
+	padding: 10px;
+}
+
+/*---------- add_delivery_address.php ----------*/
+
+#newaddress_top {
+	text-align: center;
+	padding: 20px;
+}
+
+#newaddress_mid {
+	background-color: rgb(226, 227, 231);
+	width: 50%;
+    margin: 0 auto;
+}
+
+#newaddress {
+	text-align: center;
+	padding-left: auto;
+	padding-right: auto;
+	padding: 10px;
+}
+
+#newaddress input {
+	font-size: 15px;
+	margin: -5px;
+	height: 40px;
+	width: 300px;
+	text-align: center;
+	border: 0px;
+}
+
+/*---------- member_contact.php ----------*/
+
+#contact_form_members textarea {
+	font-size: 15px;
+	margin: -5px;
+	height: 150px;
+	width: 600px;
+	text-align: center;
+	border: 0px;
+}
+
+#contact_form_members input {
+	font-size: 15px;
+	margin: -5px;
+	height: 40px;
+	width: 600px;
+	text-align: center;
+	border: 0px;
+}
+
+#contact_sent_customers {
+	color: rgb(80, 155, 152);
+}
+
+#contact_sent_customers a {
+	color: rgb(80, 155, 152);
+	color: black;
+	text-decoration: none;
+	font-style: italic;
+}
+
+
+/*------------------------------------------------------+
+|	____ ___  _  _ _ _  _    ___  ____ ____ ____ ____	|
+|	|__| |  \ |\/| | |\ |    |__] |__| | __ |___ [__ 	|
+|	|  | |__/ |  | | | \|    |    |  | |__] |___ ___]	|                                                                                           
+|														|
++▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼*/
+
+#admin_info_1 {
+	background-color: rgb(0, 133, 211);
+	width: 280px;
+	text-align: right;
+	float: left;
+	padding: 10px;
+	color: white;
+}
+
+#admin_info_2 {
+	background-color: rgb(0, 133, 211);
+	width: 280px;
+	text-align: left;
+	float: left;
+	padding: 10px;
+	color: white;
+}
+
+#admin_info_3 {
+	background-color: rgb(0, 133, 211);
+	width: 280px;
+	text-align: right;
+	float: left;
+	padding: 10px;
+	color: white;
+}
+
+#admin_info_4 {
+	background-color: rgb(0, 133, 211);
+	width: 280px;
+	text-align: left;
+	float: left;
+	padding: 10px;
+	color: white;
+}
+
+/*---------- admin_login ----------*/
+
+#admin_login_header {
+	padding: 40px;
+	font-size: 40px;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	word-spacing: 10px;
+	letter-spacing: 3px;
+	text-align: center;
+	background-image: url(images/thailand_5_crop.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#admin_login_header a {
+	color: black;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#admin_login_box {
+	text-align: center;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgb(232, 230, 234);
+	width: 500px;
+	height: 200px;
+}
+
+#admin_login_box input {
+	font-size: 15px;
+	margin: 5px;
+	height: 40px;
+	width: 400px;
+	text-align: center;
+	border: 0px
+}
+
+#admin_login_box input[type=submit] {
+	margin-top: 20px;
+	width: 200px;
+	background-color: rgb(255, 255, 255);
+}
+
+#echo_error_admin_login {
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*---------- admin_home.php ----------*/
+
+#admin_home_container {
+	padding-top: 100px;
+	padding-bottom: 30px;
+	font-size: 30px;
+	text-align: center;
+}
+
+#logoutadmin {
+	text-align: center;
+	color: red;
+	font-style: italic;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+
+#admin_home_op_1 {
+	text-align: center;
+	margin-bottom: 70px;
+	margin-top: 70px;
+}
+
+#admin_home_op_1 ul li {
+	display: inline;
+	background: rgb(0, 133, 211);
+	font-size: 30px;
+	padding: 10px;
+	line-height: 50px;
+}
+
+#admin_home_op_1 a:link {color:white; text-decoration:none;} /* unvisited link  */
+#admin_home_op_1 a:visited {color:white; text-decoration:none;} /* visited link */
+#admin_home_op_1 a:hover {color:rgb(232, 230, 234); text-decoration:none; text-decoration:none;} /* mouse over link */
+#admin_home_op_1 a:active {color:white; text-decoration:none;} /* selected link */
+
+/*---------- admin_members.php ----------*/
+
+#customerorderstable {
+	border-collapse: collapse;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#customerorderstable th {
+	text-align: center;
+	border: 2px solid;
+	border-color: rgb(0, 133, 211);
+	background-color: rgb(0, 93, 141);
+	padding: 10px;
+	color: white;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+#customerorderstable td {
+	text-align: center;
+	border: 2px solid;
+	border-color: rgb(0, 133, 211);
+	background-color: rgb(246, 244, 248);
+	padding: 10px;
+	font-size: 12px;
+}
+
+#newaddy1 {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	margin-top: 140px;
+	background-color: rgb(226, 227, 231);
+}
+
+#newaddy2 {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	margin-top: 20px;
+	background-color: rgb(226, 227, 231);
+}
+
+#table002 {
+	padding-left: 80px;
+	padding-right: 80px;
+	padding-bottom: 40px;
+	padding-top: 20px;
+}
+
+#table003 {
+	padding-left: 190px;
+	padding-right: 190px;
+	padding-bottom: 40px;
+	padding-top: 20px;
+}
